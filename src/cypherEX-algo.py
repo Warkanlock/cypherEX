@@ -14,7 +14,7 @@ year, month, day, hour, minute, secunde = time.strftime("%Y,%m,%d,%I,%M,%S").spl
 #seed = input("Enter the seed: ")
 
 seed = (int(year)/int(month)) + (int(month) + int(day) + int(hour) + int(minute)) ** int(secunde)
-peso = 60 #peso
+weight = 60 #weight of the words
 print "seed -> ", seed
 
 #INSERT THE CODE TO INPUT
