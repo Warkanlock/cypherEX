@@ -1,6 +1,8 @@
 # cypherEX
 #### ABSTRACTION BY TIME AND SIZE OF A WORD
 
+<hr>
+
 <div align="center" style="text-align:center"><img src ="https://github.com/Warkanlock/cypherEX/blob/master/logo_cypherX.png" /></div>
 
 <h4>The proposed process develops an information encryption method that uses a decoy key generation algorithm to then make a relationship with the real information input in relational databases using decoy tables. Ways have been found to be able to reference real information by means of decoys allowing the ignorance of the original information in a data support entity, achieving only the possibility of accessing the true data through a main key.</h4>
