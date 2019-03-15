@@ -3,7 +3,13 @@
 
 <div align="center" style="text-align:center"><img src ="https://github.com/Warkanlock/cypherEX/blob/master/logo_cypherX.png" /></div>
 
+<h4>The proposed process develops an information encryption method that uses a decoy key generation algorithm to then make a relationship with the real information input in relational databases using decoy tables. Ways have been found to be able to reference real information by means of decoys allowing the ignorance of the original information in a data support entity, achieving only the possibility of accessing the true data through a main key.</h4>
+
+For more reference about this work, you can go download the paper directly from ResearchGate:
+[Link to paper](https://www.researchgate.net/publication/328615812_CIFRADO_DE_INFORMACION_MEDIANTE_GENERACION_DE_CLAVES_SENUELOS_TEMPORALES?_sg=Binv_1OHXn91ChCfhENIYD3qpBLk9KZNl2uF38o3DDNLt04Byl50-EsST7_ljvD7XA4DS2d_qPHPwgxMcvp0vHL-lpJleyEM2xVrFyQb.Ipw0Y1_20TDApNSpcOcD2Ry-Af5gcSD0MxpAlCAbIdyjXYi1-LaD7PYSVbegSqGXgx_j4iP2IB-4_LyaC9W1Qg)
 <hr>
+
+# Use case and examples
 
 ## IN ENGLISH
  > An ENTRY DATA is entered and the program stores that data in a register with the dependent identification
@@ -16,15 +22,15 @@
  So we can get ENTRY DATA without having to have the data itself, being able to be sensitive information, etc.
  
  #### ENCODE 
- **ENTRY DATA: Binary Array </br>
- **INTERMEDIATE: Binary array is stored under the univocal code as the main identifier </br>
- **OUTPUT DATA: Univocal code, Creation time</br>
+ ***ENTRY DATA:*** Binary Array </br>
+ ***INTERMEDIATE:*** Binary array is stored under the univocal code as the main identifier </br>
+ ***OUTPUT DATA:*** Univocal code, Creation time </br>
  
  #### DECODE 
  
- **ENTRY DATA: Univocal code, creation time </br>
- **INTERMEDIATE: Binary Array identified under the univocal code </br>
- **OUTPUT DATA: Binary Array </br>
+ ***ENTRY DATA:*** Univocal code, creation time </br>
+ ***INTERMEDIATE:*** Binary Array identified under the univocal code </br>
+ ***OUTPUT DATA:*** Binary Array </br>
  
 
  > Suppose a locker without importance of order, the same identified under univocal codes, Only possible to open under the exit key generated under an algorithm, that algorithm would be this generator, only a generated univocal code and the creation time to obtain the initial position would be needed.
@@ -35,13 +41,14 @@
  ***ENTRY:*** "THIS PDF is encrypted" </br>
  ***OUTPUT:*** CC @ C = @ D? ECABB @ D <AC <@B? @AC </br>
 
- > To then search for the original text in the base (which was previously saved in the OUT position (ie, the SEED))
- is positioned in the base and the SEED is generated with respect to time, and then it is compared if the code that we are looking for is equal to the one entered
- As a conclusion it could be said that to obtain the initial text, a physical support of the data is necessary, with the advantage that we would not have direct reference to the content,
- this is an abstract identification of information where you could hide sensitive information without having to assign it to proper names or encrypted by Hash,
- in this case you would only have one code, which under comparison (with the code that we would have, for example in a digital conversation) and with the essential requirement of the creation time, you could get the information sencible.
- POSSIBLE UTILITIES: Economic sensible transactions, Blockchain, Cryptography, Information abstraction, Delivery optimization, Long distance travel, Education, Passwords encryption (without passwords)
- It should be clarified that this is not AN ENCRYPTED CONCEPT as such, since it is IMPOSSIBLE to obtain with certainty the original word, since only the length and weight of the word are used and not the content itself, that is why it is useful to abstract things.
+ <h4>To search something for the original text in the base (which was previously saved in the OUT position (ie, the SEED))
+ is positioned in the base and the SEED is generated with respect to time, and then it is compared if the code that we are looking for is equal to the one entered.
+ 
+As a conclusion it could be said that to obtain the initial text, a physical support of the data is necessary, with the advantage that we would not have direct reference to the content,this is an abstract identification of information where you could hide sensitive information without having to assign it to proper names or encrypted by Hash, in this case you would only have one code, which under comparison (with the code that we would have, for example in a digital conversation) and with the essential requirement of the creation time, you could get the information sencible. </h4>
+ 
+<b>POSSIBLE UTILITIES: </b> Economic sensible transactions, Blockchain, Cryptography, Information abstraction, Delivery optimization, Long distance travel, Education, Passwords encryption (without passwords)
+
+>It should be clarified that this is not AN ENCRYPTED CONCEPT as such, since it is IMPOSSIBLE to obtain with certainty the original word, since only the length and weight of the word are used and not the content itself, that is why it is useful to abstract things.
  
 <hr>
 
@@ -56,15 +63,15 @@
  Asi podemos obtener DATO DE ENTRADA sin necesidad de tener el dato en sí, pudiendo ser información sencible, etc.
 
 #### ENCODE 
- **DATOS DE ENTRADA: Array binario </br>
- **INTERMEDIO: Array binario es almacenado bajo el codigo univoco como identificador principal </br>
- **DATOS DE SALIDA: Codigo univoco, Tiempo de creación </br>
+ ***DATOS DE ENTRADA:*** Array binario </br>
+ ***INTERMEDIO:*** Array binario es almacenado bajo el codigo univoco como identificador principal </br>
+ ***DATOS DE SALIDA:*** Codigo univoco, Tiempo de creación </br>
  
  #### DECODE 
  
- **DATOS DE ENTRADA: Codigo univoco, tiempo de creación </br>
- **INTERMEDIO: Array Binario identificado bajo el codigo univoco </br>
- **DATO DE SALIDA: Array binario </br>
+ ***DATOS DE ENTRADA:*** Codigo univoco, tiempo de creación </br>
+ ***INTERMEDIO:*** Array Binario identificado bajo el codigo univoco </br>
+ ***DATO DE SALIDA:*** Array binario </br>
  
  
  >Supongamos un casillero sin importancia de orden, los mismos identificados bajo codigos univocos,
@@ -77,13 +84,14 @@
  ***ENTRADA***: "ESTE PDF esta encriptado" </br>
  ***SALIDA***: CC@C=@D?ECABB@D<AC<@B?@AC </br>
  
- >Para buscar luego el texto original en la base (que fue previamente guardado en la posición de SALIDA (o sea, el SEED)) 
- se posiciona en la base y se genera la SEED con respecto al tiempo, y luego se compara si el codigo que nosotros estamos buscando es igual al ingresado
- Como conclusión se podría decir que para la obtención del texto inicial, es necesario un soporte fisico de los datos, con la ventaja de que no tendríamos referencia directa al contenido,
- esto es una identificación abstracta de información donde se podría ocultar información sencible sin necesidad de asignarla a nombres propios o encriptados por Hash,
- en este caso solo se tendría un codigo, el cual bajo comparación (con el codigo que dispondriamos, por ejemplo en una conversación digital) y con el requisito escencial del tiempo de creación, se podría obtener la información sencible.
- UTILIDADES POSIBLES: Transacciónes sencibles economicas, Blockchain, Criptografía, Abstracción de información, Optimización de entregas, Viajes de largas distancias, Educación, Encriptado de contraseñas (sin contraseñas)
- Cabe aclarar que esto no es UN CONCEPTO DE ENCRIPTADO como tal, ya que es IMPOSIBLE obtener con certeza la palabra original, dado que solo se utiliza la longitud y peso de la palabra y no el contenido en sí, es por eso que es util para abstraer cosas. 
+ <h4>Para buscar luego el texto original en la base (que fue previamente guardado en la posición de SALIDA (o sea, el SEED)) 
+se posiciona en la base y se genera la SEED con respecto al tiempo, y luego se compara si el codigo que nosotros estamos buscando es igual al ingresado.
+ 
+Como conclusión se podría decir que para la obtención del texto inicial, es necesario un soporte fisico de los datos, con la ventaja de que no tendríamos referencia directa al contenido,esto es una identificación abstracta de información donde se podría ocultar información sencible sin necesidad de asignarla a nombres propios o encriptados por Hash, en este caso solo se tendría un codigo, el cual bajo comparación (con el codigo que dispondriamos, por ejemplo en una conversación digital) y con el requisito escencial del tiempo de creación, se podría obtener la información sencible.</h4>
+
+ <b>UTILIDADES POSIBLES: </b> Transacciónes sencibles economicas, Blockchain, Criptografía, Abstracción de información, Optimización de entregas, Viajes de largas distancias, Educación, Encriptado de contraseñas (sin contraseñas).
+ 
+>Cabe aclarar que esto no es UN CONCEPTO DE ENCRIPTADO como tal, ya que es IMPOSIBLE obtener con certeza la palabra original, dado que solo se utiliza la longitud y peso de la palabra y no el contenido en sí, es por eso que es util para abstraer cosas.
  
 <hr> 
 
