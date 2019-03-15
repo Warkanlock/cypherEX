@@ -23,12 +23,12 @@ code = input("insert the code to encrypt -> ")
 random.seed(seed);
 
 key = random.random() #primary key
-key_constelacion = ((random.uniform(peso, seed))/(seed/key)) #constelation_key
+key_constelacion = ((random.uniform(weight, seed))/(seed/key)) #constelation_key
 
 def generate_random_key_list(key, key_constelacion):
 	secret_key = []
 	for i in range(0,10):
-		data = (i)/(key)*((key-1)**key_constelacion**time.time()) + peso 
+		data = (i)/(key)*((key-1)**key_constelacion**time.time()) + weight 
 		if(data>128):
 			data = data/4
 		secret_key.append(data)
