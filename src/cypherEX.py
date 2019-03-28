@@ -18,10 +18,14 @@ class cypherEX():
 		key = random.random() #primary key
 		key_constelacion = ((random.uniform(weight, seed))/(seed/key)) #constelation_key
 
+		def bias(char):
+			bias = random.random()
+			return bias * ord(char)
+
 		def generate_random_key_list(key, key_constelacion):
 			secret_key = []
 			for i in range(0,10):
-				data = (i)/(key)*((key-1)**key_constelacion**time.time()) + weight 
+				data = (i)/(key)*((key-1)**key_constelacion**time.time()) + weight
 				if(data>128):
 					data = data/4
 				secret_key.append(data)
@@ -38,7 +42,6 @@ class cypherEX():
 				word[i] = repr(list_keys[random.randint(0,9)])
 
 			word_encode = word
-
 			return word_encode
 
 		def decode(word_encode):
@@ -53,7 +56,13 @@ class cypherEX():
 
 		#recive the word
 		word_complete = generate_word(code)
-
+  
+		bias_List = []
+		for value in word_complete[:len(word_complete)-1]:
+			print(value)
+			bias_List.append(bias(value))
+		
+		print bias_List
 		#write the encrypt word
 		print word_complete
 
